@@ -853,3 +853,120 @@ textarea:focus {
         grid-template-columns: 1fr
     }
 }
+/* =========================
+   MOBILE RESPONSIVE PATCH
+   Paste this at the END of the file
+   ========================= */
+
+/* 1) Global mobile spacing */
+@media (max-width: 760px){
+  .wrap{ padding: 0 14px; }
+  body{ font-size: 15px; }
+}
+
+/* 2) Navbar: prevent overflow + clean layout */
+@media (max-width: 760px){
+  .brandText .brandName{ font-size: 14px; line-height: 1.2; }
+  .brandText .brandTag{ font-size: 12px; }
+
+  /* brand text wrap nicely */
+  .brandText{
+    max-width: 220px;
+  }
+}
+
+/* 3) Hero: buttons full width on mobile */
+@media (max-width: 760px){
+  .ctaRow{ gap: 10px; }
+  .ctaRow .btn{
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* make pill not overflow */
+  .pill{ max-width: 100%; white-space: normal; }
+}
+
+/* 4) Stats: more compact */
+@media (max-width: 760px){
+  .stats{ grid-template-columns: 1fr 1fr; gap: 10px; }
+  .stat{ padding: 12px; }
+  .stat small{ font-size: 12px; }
+}
+
+/* 5) Section title: stack title + paragraph */
+@media (max-width: 760px){
+  .sectionTitle{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .sectionTitle p{ max-width: 100%; }
+}
+
+/* 6) Cards: readable typography on mobile */
+@media (max-width: 760px){
+  .card h3{ font-size: 18px; }
+  .card p{ font-size: 15px; }
+}
+
+/* 7) ABOUT + VIDEO: your fixed flex/width is breaking mobile */
+@media (max-width: 920px){
+  .about-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .videoThumbLink-box{
+    width: 100%;
+    max-width: 520px;
+    margin: 0;
+  }
+
+  .videoThumbLink .playIcon{
+    font-size: 44px;
+  }
+}
+
+/* 8) Fees table: reduce padding + allow smooth horizontal scroll */
+@media (max-width: 760px){
+  .feesTable{
+    min-width: 520px; /* keep for scroll */
+  }
+
+  .feesTable th,
+  .feesTable td{
+    padding: 10px 14px; /* ✅ was 60px - too big for mobile */
+    white-space: nowrap;
+  }
+
+  /* remove heavy borders inside cells (looks messy on mobile) */
+  .feesTable th,
+  .feesTable td{
+    border-left: none;
+  }
+
+  .feesTableWrap{
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* lift effect off on small screens (prevents cut/overflow) */
+  .feesCard{
+    transform: none;
+  }
+}
+
+/* 9) Contact form: button full width */
+@media (max-width: 760px){
+  #contact-form .btn{
+    width: 100%;
+  }
+}
+
+/* 10) Modal: make it fit nicely */
+@media (max-width: 520px){
+  .modal{ padding: 12px; }
+  .modalHead h2{ font-size: 18px; }
+  input, select, textarea{ padding: 10px 11px; }
+}
