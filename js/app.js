@@ -1,109 +1,88 @@
-/* ====== CONFIG: Replace with your WhatsApp number ======
-   Format: Country code + number (no +, no spaces)
-   Example BD: 8801XXXXXXXXX
-   Example USA: 1XXXXXXXXXX
-   Example UK: 44XXXXXXXXXX
-======================================================== */
-const WHATSAPP_NUMBER = "8801402499027"; // <-- তোমার WhatsApp নম্বর বসাও
-
+/* ========================= CONFIG ========================= */
+const WHATSAPP_NUMBER = "8801402499027";
 const WHATSAPP_DEFAULT_TEXT =
   "Assalamu Alaikum. I want to book a free trial class for At-Tarteel Quran Academy.";
 
-/* Open WhatsApp with prefilled message */
+/* ========================= HELPERS ========================= */
 function openWhatsApp(message) {
   const text = encodeURIComponent(message);
-  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
-  window.open(url, "_blank");
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
 }
 
-/* Elements */
-const yearEl = document.getElementById("year");
-const backdrop = document.getElementById("backdrop");
-const btnCloseModal = document.getElementById("btnCloseModal");
-const btnCancel = document.getElementById("btnCancel");
-const trialForm = document.getElementById("trialForm");
-
-const btnTrialTop = document.getElementById("btnTrialTop");
-const btnTrialHero = document.getElementById("btnTrialHero");
-const btnTrialBottom = document.getElementById("btnTrialBottom");
-
-const btnWhatsappTop = document.getElementById("btnWhatsappTop");
-const btnWhatsappHero = document.getElementById("btnWhatsappHero");
+/* ========================= ELEMENTS ========================= */
+const yearEl          = document.getElementById("year");
+const backdrop        = document.getElementById("backdrop");
+const btnCloseModal   = document.getElementById("btnCloseModal");
+const btnCancel       = document.getElementById("btnCancel");
+const trialForm       = document.getElementById("trialForm");
+const btnTrialTop     = document.getElementById("btnTrialTop");
+const btnTrialHero    = document.getElementById("btnTrialHero");
+const btnTrialBottom  = document.getElementById("btnTrialBottom");
+const btnWhatsappTop    = document.getElementById("btnWhatsappTop");
+const btnWhatsappHero   = document.getElementById("btnWhatsappHero");
 const btnWhatsappBottom = document.getElementById("btnWhatsappBottom");
-
-const whatsappLinkText = document.getElementById("whatsappLinkText");
-
+const whatsappLinkText  = document.getElementById("whatsappLinkText");
 const hamburger = document.getElementById("hamburger");
-const menu = document.getElementById("menu");
+const menu      = document.getElementById("menu");
 
-/* Init year */
-yearEl.textContent = "2020";
+/* ========================= YEAR ========================= */
+yearEl.textContent = new Date().getFullYear();
 
-/* Contact link => WhatsApp */
+/* ========================= WHATSAPP LINK ========================= */
 whatsappLinkText.addEventListener("click", (e) => {
   e.preventDefault();
   openWhatsApp(WHATSAPP_DEFAULT_TEXT);
 });
 
-/* Modal controls */
+/* ========================= MODAL ========================= */
 function openModal() {
   backdrop.classList.add("show");
   backdrop.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
 }
+
 function closeModal() {
   backdrop.classList.remove("show");
   backdrop.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
 }
 
-/* Open modal buttons */
 [btnTrialTop, btnTrialHero, btnTrialBottom].forEach((btn) => {
   btn.addEventListener("click", openModal);
 });
 
-/* Close modal buttons */
 btnCloseModal.addEventListener("click", closeModal);
 btnCancel.addEventListener("click", closeModal);
 
-/* Click outside modal closes */
 backdrop.addEventListener("click", (e) => {
   if (e.target === backdrop) closeModal();
 });
 
-/* ESC closes modal */
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeModal();
 });
 
-/* WhatsApp buttons */
+/* ========================= WHATSAPP BUTTONS ========================= */
 [btnWhatsappTop, btnWhatsappHero, btnWhatsappBottom].forEach((btn) => {
   btn.addEventListener("click", () => openWhatsApp(WHATSAPP_DEFAULT_TEXT));
 });
 
-/* Form submit => WhatsApp message */
+/* ========================= TRIAL FORM ========================= */
 trialForm.addEventListener("submit", (e) => {
   e.preventDefault();
-
-  const formData = new FormData(trialForm);
-
-  const name = formData.get("name");
-  const age = formData.get("age");
-  const country = formData.get("country");
-  const course = formData.get("course");
-  const time = formData.get("time");
-  const whatsapp = formData.get("whatsapp");
-  const message = formData.get("message");
+  const data = new FormData(trialForm);
 
   const finalMessage = `
 Assalamu Alaikum,
 I want to book a FREE trial class.
 
-Name: ${name}
-Age: ${age}
-Country: ${country}
-Course: ${course}
-Preferred Time: ${time}
-WhatsApp: ${whatsapp}
-Message: ${message || "N/A"}
+Name: ${data.get("name")}
+Age: ${data.get("age")}
+Country: ${data.get("country")}
+Course: ${data.get("course")}
+Preferred Time: ${data.get("time")}
+WhatsApp: ${data.get("whatsapp")}
+Message: ${data.get("message") || "N/A"}
 
 At-Tarteel Quran Academy
 `.trim();
@@ -113,39 +92,47 @@ At-Tarteel Quran Academy
   trialForm.reset();
 });
 
-/* Mobile menu toggle */
+/* ========================= MOBILE MENU ========================= */
 hamburger.addEventListener("click", () => {
-  menu.classList.toggle("show");
+  const isOpen = menu.classList.toggle("show");
+  hamburger.setAttribute("aria-expanded", isOpen);
+  hamburger.textContent = isOpen ? "✕" : "☰";
 });
 
-/* Close menu after clicking link */
+/* Close menu when a nav link is clicked */
 menu.querySelectorAll("a").forEach((a) => {
-  a.addEventListener("click", () => menu.classList.remove("show"));
+  a.addEventListener("click", () => {
+    menu.classList.remove("show");
+    hamburger.setAttribute("aria-expanded", "false");
+    hamburger.textContent = "☰";
+  });
 });
 
-/* Contact form => WhatsApp */
-const contactForm = document.getElementById("contactForm");
+/* Close menu when clicking outside */
+document.addEventListener("click", (e) => {
+  if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+    menu.classList.remove("show");
+    hamburger.setAttribute("aria-expanded", "false");
+    hamburger.textContent = "☰";
+  }
+});
 
+/* ========================= CONTACT FORM ========================= */
+const contactForm = document.getElementById("contactForm");
 if (contactForm) {
   contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
-
     const data = new FormData(contactForm);
-
-    const name = data.get("name");
-    const email = data.get("email") || "N/A";
-    const country = data.get("country");
-    const message = data.get("message");
 
     const finalMessage = `
 Assalamu Alaikum,
 
 New contact message from website:
 
-Name: ${name}
-Email: ${email}
-Country: ${country}
-Message: ${message}
+Name: ${data.get("name")}
+Email: ${data.get("email") || "N/A"}
+Country: ${data.get("country")}
+Message: ${data.get("message")}
 
 At-Tarteel Quran Academy
 `.trim();
