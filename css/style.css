@@ -797,6 +797,23 @@ textarea:focus {
     font-weight: 650;
     font-size: 13px
 }
+fieldset{
+    border-width: 2px;
+    border-color: #70737a;
+    border-radius: 14px;
+}
+
+legend{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 15px;
+   background: #111827;
+    color: #fff;
+    /* border-color: #111827; */
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+}
 
 /* =========================
    RESPONSIVE
