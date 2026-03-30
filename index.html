@@ -9,647 +9,392 @@
         content="Online Quran classes for kids & adults. Flexible evening / any time for USA & UK students. Quran • Tajweed • Islamic Manners." />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
-
-<body>
-    <!-- =========================
-       TOP NAVBAR
-       ========================= -->
-    <header class="topbar">
-        <div class="wrap nav">
-            <!-- Brand -->
-            <div class="brand">
-                <div class="logo" aria-hidden="true">AT</div>
-                <div class="brandText">
-                    <span class="brandName">At-Tarteel Quran Academy</span>
-                    <small class="brandTag">Online Quran Classes • Worldwide (Flexible Timing)</small>
-                </div>
-            </div>
-
-            <!-- Desktop menu -->
-            <nav class="menu" id="menu">
-                <a href="#courses">Courses</a>
-                <a href="#how">How it works</a>
-                <a href="#timing">Timing</a>
-                <a href="#contact">Contact</a>
-                <a href="#fees">Fees</a>
-
-                <!-- WhatsApp button with icon -->
-                <button class="btn btnWhatsapp" id="btnWhatsappTop" type="button" aria-label="Chat on WhatsApp">
-                    <span class="btnIcon" aria-hidden="true">
-                        <!-- WhatsApp Icon (SVG) -->
-                        <svg viewBox="0 0 32 32" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="currentColor"
-                                d="M19.11 17.29c-.25-.12-1.47-.72-1.7-.8-.23-.08-.4-.12-.57.12-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.76-.15-.25-.02-.39.11-.52.11-.11.25-.3.37-.45.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.57-1.38-.78-1.9-.2-.48-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.45 1.02 2.62c.12.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.52.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.17.21-.57.21-1.06.15-1.17-.06-.11-.23-.17-.48-.3z" />
-                            <path fill="currentColor"
-                                d="M26.69 5.31C23.88 2.5 20.14.95 16.17.95 8.3.95 1.9 7.35 1.9 15.22c0 2.51.65 4.96 1.89 7.13L1.8 31.05l8.9-1.96c2.06 1.12 4.38 1.71 6.74 1.71h.01c7.87 0 14.27-6.4 14.27-14.27 0-3.97-1.55-7.71-4.36-10.22zM16.17 28.4h-.01c-2.12 0-4.2-.57-6.01-1.64l-.43-.26-5.28 1.16 1.13-5.15-.28-.53c-1.19-1.9-1.82-4.1-1.82-6.36 0-6.55 5.33-11.88 11.9-11.88 3.18 0 6.17 1.24 8.41 3.48 2.24 2.24 3.48 5.23 3.48 8.41 0 6.55-5.33 11.87-11.9 11.87z" />
-                        </svg>
-                    </span>
-                    <span>WhatsApp</span>
-                </button>
-
-                <button class="btn primary" id="btnTrialTop" type="button">Get Admission</button>
-            </nav>
-
-            <!-- Mobile hamburger -->
-            <button class="hamburger btn" id="hamburger" type="button" aria-label="Open menu">☰</button>
-        </div>
-    </header>
-
-    <!-- =========================
-       MAIN CONTENT
-       ========================= -->
-    <main class="wrap">
-
-        <!-- HERO -->
-        <section class="hero">
-            <div class="heroGrid">
-
-                <!-- Hero Left -->
-                <div class="heroCard">
-
-                    <!-- Mini banner with Quran icon -->
-                    <div class="miniBanner">
-                        <div class="quranIcon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.5 5.2c2.2-1.2 4.9-1.2 7.1 0v13.6c-2.2-1.2-4.9-1.2-7.1 0V5.2Z"
-                                    stroke="currentColor" stroke-width="1.8" />
-                                <path d="M7.5 5.2C6 4.4 4.2 4.3 3 4.6v14.8c1.2-.3 3-.2 4.5.6" stroke="currentColor"
-                                    stroke-width="1.8" stroke-linecap="round" />
-                                <path d="M14.6 5.2c1.5-.8 3.3-.9 4.5-.6v14.8c-1.2-.3-3-.2-4.5.6" stroke="currentColor"
-                                    stroke-width="1.8" stroke-linecap="round" />
-                                <path d="M12 8.1v7.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                            </svg>
-                        </div>
-                        <div class="miniBannerText">
-                            <strong>Structured Quran Learning</strong>
-                            <span>Clear • Correct • Caring (Tajweed)</span>
-                        </div>
-                    </div>
-
-                    <div class="pill">
-                        <span class="dot" aria-hidden="true"></span>
-                        Free Trial Class Available
-                    </div>
-
-                    <h1>Online Quran Classes<br />for Kids & Adults</h1>
-
-                    <ul class="keyPoints">
-                        <li>
-                            <span class="checkIcon">✔</span>
-                            Correct pronunciation with proper Tajweed
-                        </li>
-                        <li>
-                            <span class="checkIcon">✔</span>
-                            Supportive and respectful learning environment
-                        </li>
-                        <li>
-                            <span class="checkIcon">✔</span>
-                            Child-friendly teaching guided by age-appropriate learning principles
-                        </li>
-                        <li>
-                            <span class="checkIcon">✔</span>
-                            Suitable for families living abroad
-                        </li>
-                    </ul>
-
-
-                    <p class="highlight">Flexible Scheduling for Your Child’s Deen & Character</p>
-                    <p class="featuresLine">Quran • Tajweed • Islamic Manners</p>
-
-                    <div class="ctaRow">
-                        <button class="btn primary" id="btnTrialHero" type="button">Book a Free Trial Class</button>
-
-                        <!-- WhatsApp button with icon -->
-                        <button class="btn btnWhatsapp" id="btnWhatsappHero" type="button"
-                            aria-label="Chat on WhatsApp">
-                            <span class="btnIcon" aria-hidden="true">
-                                <svg viewBox="0 0 32 32" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="currentColor"
-                                        d="M19.11 17.29c-.25-.12-1.47-.72-1.7-.8-.23-.08-.4-.12-.57.12-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.76-.15-.25-.02-.39.11-.52.11-.11.25-.3.37-.45.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.57-1.38-.78-1.9-.2-.48-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.45 1.02 2.62c.12.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.52.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.17.21-.57.21-1.06.15-1.17-.06-.11-.23-.17-.48-.3z" />
-                                    <path fill="currentColor"
-                                        d="M26.69 5.31C23.88 2.5 20.14.95 16.17.95 8.3.95 1.9 7.35 1.9 15.22c0 2.51.65 4.96 1.89 7.13L1.8 31.05l8.9-1.96c2.06 1.12 4.38 1.71 6.74 1.71h.01c7.87 0 14.27-6.4 14.27-14.27 0-3.97-1.55-7.71-4.36-10.22zM16.17 28.4h-.01c-2.12 0-4.2-.57-6.01-1.64l-.43-.26-5.28 1.16 1.13-5.15-.28-.53c-1.19-1.9-1.82-4.1-1.82-6.36 0-6.55 5.33-11.88 11.9-11.88 3.18 0 6.17 1.24 8.41 3.48 2.24 2.24 3.48 5.23 3.48 8.41 0 6.55-5.33 11.87-11.9 11.87z" />
-                                </svg>
-                            </span>
-                            <span>WhatsApp Us</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Hero Right -->
-                <div class="heroCard">
-                    <div class="stats">
-                        <div class="stat">
-                            <div class="statIcon">🕒</div>
-                            <b>5+ Years</b>
-                            <span>Teaching Experience</span>
-                            <small>Trusted experience teaching kids & adults with care</small>
-                        </div>
-
-                        <div class="stat">
-                            <div class="statIcon">📘</div>
-                            <b>1-to-1</b>
-                            <span>Online Classes</span>
-                            <small>Personal attention for better understanding</small>
-                        </div>
-
-                        <div class="stat">
-                            <div class="statIcon">
-                                <div class="statIcon" aria-hidden="true">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="12" cy="6.5" r="2.5" stroke="currentColor" stroke-width="1.8" />
-                                        <path d="M7 13.8c0-2.6 10-2.6 10 0" stroke="currentColor" stroke-width="1.8"
-                                            stroke-linecap="round" />
-                                        <rect x="6" y="15" width="12" height="5" rx="1.2" stroke="currentColor"
-                                            stroke-width="1.8" />
-                                        <line x1="12" y1="15" x2="12" y2="20" stroke="currentColor"
-                                            stroke-width="1.8" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <b>Kids + Adults</b>
-                            <span>Beginner Friendly</span>
-                            <small>Separate teaching approach based on age & level</small>
-                        </div>
-
-                        <div class="stat">
-                            <div class="statIcon">📊</div>
-                            <b>Weekly</b>
-                            <span>Progress Updates</span>
-                            <small>Regular feedback for parents & students</small>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!-- WHY -->
-        <section class="section" id="why">
-            <div class="sectionTitle">
-                <h2>Why Parents Choose Us</h2>
-                <p>Simple, caring and correct Quran learning with Tajweed and Islamic manners.</p>
-            </div>
-
-            <div class="grid3">
-                <div class="card">
-                    <h3>Patient & Child-Friendly</h3>
-                    <p>We teach with calm correction and encouragement.</p>
-                </div>
-                <div class="card">
-                    <h3>Comfortable for Adults</h3>
-                    <p>Learn without hesitation—beginner friendly support.</p>
-                </div>
-                <div class="card">
-                    <h3>Clear Improvement</h3>
-                    <p>Progress becomes visible with regular classes, InshaAllah.</p>
-                </div>
-            </div>
-        </section>
-        <!-- ABOUT OUR ACADEMY -->
-        <section class="section" id="about">
-            <div class="sectionTitle">
-                <h2>About Our Academy</h2>
-                <p>Correct, caring, and structured Quran learning for kids and adults—designed for families worldwide.
-                </p>
-            </div>
-
-            <div class="twoCol">
-                <!-- About / Mission -->
-                <div class="card">
-                    <h3>Our Approach</h3>
-                    <p>
-                        We help students learn the Quran with <strong>correct pronunciation</strong> and <strong>proper
-                            Tajweed</strong>
-                        in a supportive, respectful environment.
-                    </p>
-                    <p>
-                        Our teaching is <strong>child-friendly</strong> and guided by <strong>age-appropriate learning
-                            principles</strong>,
-                        while adults receive calm, step-by-step support—so everyone learns with confidence.
-                    </p>
-                    <p>
-                        Along with Quran learning, we emphasize <strong>Islamic manners</strong>, <strong>character
-                            building</strong>,
-                        and <strong>practical daily learning</strong> (Adab, Duas, basic Masalah), InshaAllah.
-                    </p>
-                </div>
-
-                <!-- Director / Credentials -->
-                <div class="card">
-                    <h3>Director & Credentials</h3>
-                    <p>
-                        At-Tarteel Quran Academy is led by <strong>Ustad Faridur Rahman</strong>—a <strong>Hafiz of the
-                            Quran</strong>,
-                        with a <strong>Master’s degree in Islamic Studies</strong>, and advanced qualifications in
-                        <strong>Ifta (Islamic Jurisprudence / Islamic Law)</strong>.
-                    </p>
-                    <p>
-                        With a strong academic background and teaching experience, the focus remains on
-                        <strong>clear correction</strong>, <strong>gentle guidance</strong>, and building a love for the
-                        Quran.
-                    </p>
-                    <div class="about-card">
-                        <ul class="aboutList">
-                            <li>✔ Hafiz of the Quran</li>
-                            <li>✔ Master’s in Islamic Studies</li>
-                            <li>✔ Qualified in Ifta (Islamic Law)</li>
-                            <li>✔ Tajweed, Adab, Duas & Character Building</li>
-                        </ul>
-                        <div class="videoThumbLink-box">
-                            <a class="videoThumbLink" href="https://youtu.be/9sMQoVKon8M" target="_blank">
-                                <img src="./images/farid bhai.jpg" alt="Video thumbnail">
-                                <span class="playIcon">▶</span>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-            </div>
-        </section>
-
-
-        <!-- COURSES -->
-        <section class="section" id="courses">
-            <div class="sectionTitle">
-                <h2>Our Courses</h2>
-                <p>Choose a course based on your level—kids, teens, or adults.</p>
-            </div>
-
-            <div class="grid3">
-                <div class="card">
-                    <h3>Noorani Qaida</h3>
-                    <p>For kids & beginners to build strong foundation.</p>
-                </div>
-                <div class="card">
-                    <h3>Quran Reading</h3>
-                    <p>Correct recitation with pronunciation practice.</p>
-                </div>
-                <div class="card">
-                    <h3>Quran with Tajweed</h3>
-                    <p>Tajweed rules with guided corrections.</p>
-                </div>
-            </div>
-
-            <div class="grid3 mt12">
-                <div class="card">
-                    <h3>Deen & Character Building</h3>
-                    <p><b>Duas •Hadith •Namaz & Masalah • Adab </b> — age-appropriate guidance for daily Islamic
-                        practice and
-                        good manners.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Hifz Support</h3>
-                    <p>Revision + memorization guidance (optional).</p>
-                </div>
-                <div class="card">
-                    <h3>Kids & Adults</h3>
-                    <p>Separate teaching approach for kids and adults.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- HOW -->
-        <section class="section" id="how">
-            <div class="sectionTitle">
-                <h2>How Our Online Classes Work</h2>
-                <p>Easy steps—parents can choose from available times.</p>
-            </div>
-
-            <div class="list">
-                <div class="item">
-                    <div class="badge">1</div>
-                    <div>
-                        <h3>Book a Free Trial</h3>
-                        <p>With trust in Allah, send the student’s age and country Insaallah.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="badge">2</div>
-                    <div>
-                        <h3>Choose Convenient Time</h3>
-                        <p>Flexible class timings available across all time zones, based on availability.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="badge">3</div>
-                    <div>
-                        <h3>Start Regular Classes</h3>
-                        <p>One-to-one classes with affordable monthly fees and flexible options.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="badge">4</div>
-                    <div>
-                        <h3>Weekly Updates</h3>
-                        <p>Parents receive progress updates.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- TIMING -->
-        <section class="section" id="timing">
-            <div class="sectionTitle">
-                <h2>Class Timing</h2>
-                <p>Flexible evening / any time based on available slots.</p>
-            </div>
-
-            <div class="twoCol">
-                <div class="card">
-                    <h3>Global Time Zones</h3>
-                    <p>Flexible time slots across USA, UK, and global time zones, based on availability.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Your Local Time</h3>
-                    <p>We schedule classes according to your local time for convenience.</p>
-                </div>
-            </div>
-
-        </section>
-        <!-- FEES -->
-        <section class="section" id="fees">
-            <div class="sectionTitle">
-                <h2>Fees</h2>
-                <p>Transparent monthly pricing for 3 days/week (1 hour per class).</p>
-            </div>
-
-            <div class="feesCard">
-                <div class="feesHead">
-                    <h3 class="feesTitle">Monthly Fee</h3>
-                    <span class="feesNote">Approx. conversion (rates may change)</span>
-                </div>
-
-                <div class="feesTableWrap">
-                    <table class="feesTable">
-                        <thead>
-                            <tr>
-                                <th>Plan</th>
-                                <th>BDT</th>
-                                <th>USD</th>
-                                <th>GBP</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Standard</strong>
-                                    <div class="feesSub">3 days/week • 1 hour/class</div>
-                                </td>
-                                <td><strong>3,500</strong></td>
-                                <td><strong>35–40</strong></td>
-                                <td><strong>28–32</strong></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="feesFooter">
-                    <div class="feesBullets">
-                        <div class="feesBullet">✔ One-to-one classes</div>
-                        <div class="feesBullet">✔ Clear learning plan</div>
-                        <div class="feesBullet">✔ Weekly progress updates</div>
-                    </div>
-
-                    <p class="feesSmall">
-                        Fees may vary slightly based on timing and class frequency. For exact fee, please message us on
-                        WhatsApp.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA BAND -->
-        <section class="section">
-            <div class="ctaBand">
-                <div>
-                    <h2 class="ctaTitle">Ready to start?</h2>
-                    <p class="ctaText">Book a free trial class and begin your Quran journey today, InshaAllah.</p>
-                </div>
-
-                <div class="ctaRow">
-                    <button class="btn primary" id="btnTrialBottom" type="button">Book Free Trial</button>
-
-                    <button class="btn btnWhatsapp" id="btnWhatsappBottom" type="button" aria-label="Chat on WhatsApp">
-                        <span class="btnIcon" aria-hidden="true">
-                            <svg viewBox="0 0 32 32" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="currentColor"
-                                    d="M19.11 17.29c-.25-.12-1.47-.72-1.7-.8-.23-.08-.4-.12-.57.12-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.76-.15-.25-.02-.39.11-.52.11-.11.25-.3.37-.45.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.57-1.38-.78-1.9-.2-.48-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.45 1.02 2.62c.12.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.52.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.17.21-.57.21-1.06.15-1.17-.06-.11-.23-.17-.48-.3z" />
-                                <path fill="currentColor"
-                                    d="M26.69 5.31C23.88 2.5 20.14.95 16.17.95 8.3.95 1.9 7.35 1.9 15.22c0 2.51.65 4.96 1.89 7.13L1.8 31.05l8.9-1.96c2.06 1.12 4.38 1.71 6.74 1.71h.01c7.87 0 14.27-6.4 14.27-14.27 0-3.97-1.55-7.71-4.36-10.22zM16.17 28.4h-.01c-2.12 0-4.2-.57-6.01-1.64l-.43-.26-5.28 1.16 1.13-5.15-.28-.53c-1.19-1.9-1.82-4.1-1.82-6.36 0-6.55 5.33-11.88 11.9-11.88 3.18 0 6.17 1.24 8.41 3.48 2.24 2.24 3.48 5.23 3.48 8.41 0 6.55-5.33 11.87-11.9 11.87z" />
-                            </svg>
-                        </span>
-                        <span>WhatsApp Now</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section class="section" id="contact">
-            <div class="sectionTitle">
-                <h2>Contact</h2>
-                <p>Message us on WhatsApp for fast response.</p>
-            </div>
-
-            <div class="twoCol">
-                <div class="card">
-                    <h3>WhatsApp</h3>
-                    <p><a href="#" id="whatsappLinkText">Click to chat</a></p>
-                </div>
-                <div class="card">
-                    <h3>Email</h3>
-                    <p><a href="mailto:ibnhosain014@gmail.com">ibnhosain014@gmail.com</a></p>
-                </div>
-            </div>
-        </section>
-        <!-- CONTACT FORM -->
-        <section class="section" id="contact-form">
-            <div class="sectionTitle">
-                <h2>Contact Us</h2>
-                <p>Have a question? Send us a message and we will respond as soon as possible, InshaAllah.</p>
-            </div>
-
-            <div class="contactGrid">
-                <!-- Left info -->
-                <div class="card">
-                    <h3>Get in Touch</h3>
-                    <p>You can reach out for course details, fees, or to book a free trial class.</p>
-
-                    <ul class="keyPoints contactList">
-                        <li>
-                            <span class="checkIcon">✔</span>
-                            Online classes for kids & adults
-                        </li>
-                        <li>
-                            <span class="checkIcon">✔</span>
-                            Flexible scheduling across global time zones
-                        </li>
-                        <li>
-                            <span class="checkIcon">✔</span>
-                            One-to-one personalized classes
-                        </li>
-                        <li>
-                            <span class="checkIcon">✔</span>
-                            Tajweed-focused Quran learning
-                        </li>
-                        <li>
-                            <span class="checkIcon">✔</span>
-                            Islamic manners & character building
-                        </li>
-                        <li>
-                            <span class="checkIcon">✔</span>
-                            Weekly progress updates for parents
-                        </li>
-                        <li>
-                            <span class="checkIcon">✔</span>
-                            Friendly, patient, and respectful teaching environment
-                        </li>
-                    </ul>
-
-
-                </div>
-
-                <!-- Right form -->
-                <div class="card">
-                    <form id="contactForm">
-                        <div class="field">
-                            <label>Your Name</label>
-                            <input name="name" required placeholder="Your full name" />
-                        </div>
-
-                        <div class="field">
-                            <label>Email (optional)</label>
-                            <input name="email" placeholder="example@email.com" />
-                        </div>
-
-                        <div class="field">
-                            <label>Country</label>
-                            <input name="country" required placeholder="Your country" />
-                        </div>
-
-                        <div class="field">
-                            <label>Message</label>
-                            <textarea name="message" rows="4" required
-                                placeholder="Write your message here..."></textarea>
-                        </div>
-
-                        <button class="btn btnWhatsapp" type="submit">
-                            Send Message on WhatsApp
-                        </button>
-
-                        <p class="note">
-                            Your message will be sent securely via WhatsApp.
-                        </p>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-    </main>
-    <!-- FOOTER -->
-    <footer>
-        <div class="wrap footerRow">
-            <div>© <span id="year"></span> At-Tarteel Quran Academy</div>
-            <div>Quran • Tajweed • Islamic Manners</div>
-        </div>
-    </footer>
-
-    <!-- MODAL -->
-    <div class="backdrop" id="backdrop" role="dialog" aria-modal="true" aria-hidden="true">
-        <div class="modal">
-            <div class="modalHead">
-                <h2>Your Journey to the Quran Begins Here</h2>
-                <button class="btn icon" id="btnCloseModal" type="button" aria-label="Close">✕</button>
-            </div>
-
-            <form id="trialForm" class="form">
-                 <fieldset>
-                    <legend>Admission Application Form</legend>
-                <div class="row">
-                    <div class="field">
-                        <label>Student Name</label>
-                        <input name="name" required placeholder="Child name" />
-                    </div>
-                    <div class="field">
-                        <label>Age</label>
-                        <input name="age" required placeholder="e.g. 5" />
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="field">
-                        <label>Country</label>
-                        <select name="country" required>
-                            <option value="">Select</option>
-                            <option>USA</option>
-                            <option>UK</option>
-                            <option>Canada</option>
-                            <option>Australia</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-
-                    <div class="field">
-                        <label>Course Interested In</label>
-                        <select name="course" required>
-                            <option value="">Select</option>
-                             <option>Absolute Beginners</option>
-                            <option>Noorani Qaida</option>
-                            <option>Quran Reading</option>
-                            <option>Quran with Tajweed</option>
-                            <option>Islamic Manners</option>
-                            <option>Hifz Support</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label>Preferred Time (USA/UK Evening or Any Available)</label>
-                    <input name="time" required placeholder="e.g. UK Evening / USA Evening" />
-                </div>
-
-                <div class="field">
-                    <label>WhatsApp Number</label>
-                    <input name="whatsapp" required placeholder="+1..., +44..., +880..." />
-                </div>
-
-                     <div class="field">
-    <label>Upload Payment Screenshot </label>
-    <input type="file" id="screenshot" accept="image/*">
-                </div>
-
-                <div class="ctaRow">
-                    <button class="btn primary" type="submit">Submit Admission</button>
-                    <button class="btn" id="btnCancel" type="button">Cancel</button>
-                </div>
-                     <div>
-                          <h4><strong>Payment Information:</strong></h4>
-     <p>📱 bKash: 01402499027</p> 
-      <p><strong>🏦 Bank Account Details:</strong><br>
-Bank Name: Islami Bank Bangladesh limited.<br>
-Branch: Mymensingh( Code
-140)<br>
-Account name:  
-FARIDUR RAHΜΑΝ <br>
- Account number:  20501400203811511<br>
-Swift code: IBBLBDDH140<br>
-Routing Number: 125611758.
-      </p>
-                          <p class="note">Submitting will open WhatsApp with your details pre-filled.</p>
-                     </div>
- 
-               
-                 </fieldset>
-            </form>
-        </div>
+<!-- ========================= TOP NAVBAR ========================= -->
+<header class="topbar">
+  <div class="wrap nav">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">AT</div>
+      <div class="brandText">
+        <span class="brandName">At-Tarteel Quran Academy</span>
+        <small class="brandTag">Online Quran Classes • Worldwide (Flexible Timing)</small>
+      </div>
     </div>
+
+    <nav class="menu" id="menu">
+      <a href="#courses">Courses</a>
+      <a href="#how">How it works</a>
+      <a href="#timing">Timing</a>
+      <a href="#contact">Contact</a>
+      <a href="#fees">Fees</a>
+      <button class="btn btnWhatsapp" id="btnWhatsappTop" type="button" aria-label="Chat on WhatsApp">
+        <span class="btnIcon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor" d="M19.11 17.29c-.25-.12-1.47-.72-1.7-.8-.23-.08-.4-.12-.57.12-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.76-.15-.25-.02-.39.11-.52.11-.11.25-.3.37-.45.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.57-1.38-.78-1.9-.2-.48-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.45 1.02 2.62c.12.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.52.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.17.21-.57.21-1.06.15-1.17-.06-.11-.23-.17-.48-.3z"/>
+            <path fill="currentColor" d="M26.69 5.31C23.88 2.5 20.14.95 16.17.95 8.3.95 1.9 7.35 1.9 15.22c0 2.51.65 4.96 1.89 7.13L1.8 31.05l8.9-1.96c2.06 1.12 4.38 1.71 6.74 1.71h.01c7.87 0 14.27-6.4 14.27-14.27 0-3.97-1.55-7.71-4.36-10.22zM16.17 28.4h-.01c-2.12 0-4.2-.57-6.01-1.64l-.43-.26-5.28 1.16 1.13-5.15-.28-.53c-1.19-1.9-1.82-4.1-1.82-6.36 0-6.55 5.33-11.88 11.9-11.88 3.18 0 6.17 1.24 8.41 3.48 2.24 2.24 3.48 5.23 3.48 8.41 0 6.55-5.33 11.87-11.9 11.87z"/>
+          </svg>
+        </span>
+        <span>WhatsApp</span>
+      </button>
+      <button class="btn primary" id="btnTrialTop" type="button">Get Admission</button>
+    </nav>
+
+    <button class="hamburger btn" id="hamburger" type="button" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<!-- ========================= MAIN CONTENT ========================= -->
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="heroGrid">
+      <div class="heroCard">
+        <div class="miniBanner">
+          <div class="quranIcon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.5 5.2c2.2-1.2 4.9-1.2 7.1 0v13.6c-2.2-1.2-4.9-1.2-7.1 0V5.2Z" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M7.5 5.2C6 4.4 4.2 4.3 3 4.6v14.8c1.2-.3 3-.2 4.5.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M14.6 5.2c1.5-.8 3.3-.9 4.5-.6v14.8c-1.2-.3-3-.2-4.5.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M12 8.1v7.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="miniBannerText">
+            <strong>Structured Quran Learning</strong>
+            <span>Clear • Correct • Caring (Tajweed)</span>
+          </div>
+        </div>
+
+        <div class="pill">
+          <span class="dot" aria-hidden="true"></span>
+          Free Trial Class Available
+        </div>
+
+        <h1>Online Quran Classes<br />for Kids &amp; Adults</h1>
+
+        <ul class="keyPoints">
+          <li><span class="checkIcon">✔</span> Correct pronunciation with proper Tajweed</li>
+          <li><span class="checkIcon">✔</span> Supportive and respectful learning environment</li>
+          <li><span class="checkIcon">✔</span> Child-friendly teaching guided by age-appropriate learning principles</li>
+          <li><span class="checkIcon">✔</span> Suitable for families living abroad</li>
+        </ul>
+
+        <p class="highlight">Flexible Scheduling for Your Child's Deen &amp; Character</p>
+        <p class="featuresLine">Quran • Tajweed • Islamic Manners</p>
+
+        <div class="ctaRow">
+          <button class="btn primary" id="btnTrialHero" type="button">Book a Free Trial Class</button>
+          <button class="btn btnWhatsapp" id="btnWhatsappHero" type="button" aria-label="Chat on WhatsApp">
+            <span class="btnIcon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M19.11 17.29c-.25-.12-1.47-.72-1.7-.8-.23-.08-.4-.12-.57.12-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.76-.15-.25-.02-.39.11-.52.11-.11.25-.3.37-.45.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.57-1.38-.78-1.9-.2-.48-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.45 1.02 2.62c.12.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.52.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.17.21-.57.21-1.06.15-1.17-.06-.11-.23-.17-.48-.3z"/>
+                <path fill="currentColor" d="M26.69 5.31C23.88 2.5 20.14.95 16.17.95 8.3.95 1.9 7.35 1.9 15.22c0 2.51.65 4.96 1.89 7.13L1.8 31.05l8.9-1.96c2.06 1.12 4.38 1.71 6.74 1.71h.01c7.87 0 14.27-6.4 14.27-14.27 0-3.97-1.55-7.71-4.36-10.22zM16.17 28.4h-.01c-2.12 0-4.2-.57-6.01-1.64l-.43-.26-5.28 1.16 1.13-5.15-.28-.53c-1.19-1.9-1.82-4.1-1.82-6.36 0-6.55 5.33-11.88 11.9-11.88 3.18 0 6.17 1.24 8.41 3.48 2.24 2.24 3.48 5.23 3.48 8.41 0 6.55-5.33 11.87-11.9 11.87z"/>
+              </svg>
+            </span>
+            <span>WhatsApp Us</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero Right -->
+      <div class="heroCard">
+        <div class="stats">
+          <div class="stat">
+            <div class="statIcon">🕒</div>
+            <b>5+ Years</b>
+            <span>Teaching Experience</span>
+            <small>Trusted experience teaching kids & adults with care</small>
+          </div>
+          <div class="stat">
+            <div class="statIcon">📘</div>
+            <b>1-to-1</b>
+            <span>Online Classes</span>
+            <small>Personal attention for better understanding</small>
+          </div>
+          <div class="stat">
+            <div class="statIcon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="6.5" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M7 13.8c0-2.6 10-2.6 10 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <rect x="6" y="15" width="12" height="5" rx="1.2" stroke="currentColor" stroke-width="1.8"/>
+                <line x1="12" y1="15" x2="12" y2="20" stroke="currentColor" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <b>Kids + Adults</b>
+            <span>Beginner Friendly</span>
+            <small>Separate teaching approach based on age & level</small>
+          </div>
+          <div class="stat">
+            <div class="statIcon">📊</div>
+            <b>Weekly</b>
+            <span>Progress Updates</span>
+            <small>Regular feedback for parents & students</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section" id="why">
+    <div class="sectionTitle">
+      <h2>Why Parents Choose Us</h2>
+      <p>Simple, caring and correct Quran learning with Tajweed and Islamic manners.</p>
+    </div>
+    <div class="grid3">
+      <div class="card"><h3>Patient &amp; Child-Friendly</h3><p>We teach with calm correction and encouragement.</p></div>
+      <div class="card"><h3>Comfortable for Adults</h3><p>Learn without hesitation—beginner friendly support.</p></div>
+      <div class="card"><h3>Clear Improvement</h3><p>Progress becomes visible with regular classes, InshaAllah.</p></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="sectionTitle">
+      <h2>About Our Academy</h2>
+      <p>Correct, caring, and structured Quran learning for kids and adults—designed for families worldwide.</p>
+    </div>
+    <div class="twoCol">
+      <div class="card">
+        <h3>Our Approach</h3>
+        <p>We help students learn the Quran with <strong>correct pronunciation</strong> and <strong>proper Tajweed</strong> in a supportive, respectful environment.</p>
+        <p>Our teaching is <strong>child-friendly</strong> and guided by <strong>age-appropriate learning principles</strong>, while adults receive calm, step-by-step support—so everyone learns with confidence.</p>
+        <p>Along with Quran learning, we emphasize <strong>Islamic manners</strong>, <strong>character building</strong>, and <strong>practical daily learning</strong> (Adab, Duas, basic Masalah), InshaAllah.</p>
+      </div>
+      <div class="card">
+        <h3>Director &amp; Credentials</h3>
+        <p>At-Tarteel Quran Academy is led by <strong>Ustad Faridur Rahman</strong>—a <strong>Hafiz of the Quran</strong>, with a <strong>Master's degree in Islamic Studies</strong>, and advanced qualifications in <strong>Ifta (Islamic Jurisprudence / Islamic Law)</strong>.</p>
+        <p>With a strong academic background and teaching experience, the focus remains on <strong>clear correction</strong>, <strong>gentle guidance</strong>, and building a love for the Quran.</p>
+        <div class="about-card">
+          <ul class="aboutList">
+            <li>✔ Hafiz of the Quran</li>
+            <li>✔ Master's in Islamic Studies</li>
+            <li>✔ Qualified in Ifta (Islamic Law)</li>
+            <li>✔ Tajweed, Adab, Duas &amp; Character Building</li>
+          </ul>
+          <div class="videoThumbLink-box">
+            <a class="videoThumbLink" href="https://youtu.be/9sMQoVKon8M" target="_blank">
+              <img src="./images/farid bhai.jpg" alt="Ustad Faridur Rahman - Video thumbnail">
+              <span class="playIcon">▶</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="section" id="courses">
+    <div class="sectionTitle">
+      <h2>Our Courses</h2>
+      <p>Choose a course based on your level—kids, teens, or adults.</p>
+    </div>
+    <div class="grid3">
+      <div class="card"><h3>Noorani Qaida</h3><p>For kids & beginners to build strong foundation.</p></div>
+      <div class="card"><h3>Quran Reading</h3><p>Correct recitation with pronunciation practice.</p></div>
+      <div class="card"><h3>Quran with Tajweed</h3><p>Tajweed rules with guided corrections.</p></div>
+    </div>
+    <div class="grid3 mt12">
+      <div class="card"><h3>Deen &amp; Character Building</h3><p><b>Duas • Hadith • Namaz &amp; Masalah • Adab</b> — age-appropriate guidance for daily Islamic practice and good manners.</p></div>
+      <div class="card"><h3>Hifz Support</h3><p>Revision + memorization guidance (optional).</p></div>
+      <div class="card"><h3>Kids &amp; Adults</h3><p>Separate teaching approach for kids and adults.</p></div>
+    </div>
+  </section>
+
+  <!-- HOW -->
+  <section class="section" id="how">
+    <div class="sectionTitle">
+      <h2>How Our Online Classes Work</h2>
+      <p>Easy steps—parents can choose from available times.</p>
+    </div>
+    <div class="list">
+      <div class="item"><div class="badge">1</div><div><h3>Book a Free Trial</h3><p>With trust in Allah, send the student's age and country InshaAllah.</p></div></div>
+      <div class="item"><div class="badge">2</div><div><h3>Choose Convenient Time</h3><p>Flexible class timings available across all time zones, based on availability.</p></div></div>
+      <div class="item"><div class="badge">3</div><div><h3>Start Regular Classes</h3><p>One-to-one classes with affordable monthly fees and flexible options.</p></div></div>
+      <div class="item"><div class="badge">4</div><div><h3>Weekly Updates</h3><p>Parents receive progress updates.</p></div></div>
+    </div>
+  </section>
+
+  <!-- TIMING -->
+  <section class="section" id="timing">
+    <div class="sectionTitle">
+      <h2>Class Timing</h2>
+      <p>Flexible evening / any time based on available slots.</p>
+    </div>
+    <div class="twoCol">
+      <div class="card"><h3>Global Time Zones</h3><p>Flexible time slots across USA, UK, and global time zones, based on availability.</p></div>
+      <div class="card"><h3>Your Local Time</h3><p>We schedule classes according to your local time for convenience.</p></div>
+    </div>
+  </section>
+
+  <!-- FEES -->
+  <section class="section" id="fees">
+    <div class="sectionTitle">
+      <h2>Fees</h2>
+      <p>Transparent monthly pricing for 3 days/week (1 hour per class).</p>
+    </div>
+    <div class="feesCard">
+      <div class="feesHead">
+        <h3 class="feesTitle">Monthly Fee</h3>
+        <span class="feesNote">Approx. conversion (rates may change)</span>
+      </div>
+      <div class="feesTableWrap">
+        <table class="feesTable">
+          <thead>
+            <tr><th>Plan</th><th>BDT</th><th>USD</th><th>GBP</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Standard</strong><div class="feesSub">3 days/week • 1 hour/class</div></td>
+              <td><strong>3,500</strong></td>
+              <td><strong>35–40</strong></td>
+              <td><strong>28–32</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="feesFooter">
+        <div class="feesBullets">
+          <div class="feesBullet">✔ One-to-one classes</div>
+          <div class="feesBullet">✔ Clear learning plan</div>
+          <div class="feesBullet">✔ Weekly progress updates</div>
+        </div>
+        <p class="feesSmall">Fees may vary slightly based on timing and class frequency. For exact fee, please message us on WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="section">
+    <div class="ctaBand">
+      <div>
+        <h2 class="ctaTitle">Ready to start?</h2>
+        <p class="ctaText">Book a free trial class and begin your Quran journey today, InshaAllah.</p>
+      </div>
+      <div class="ctaRow">
+        <button class="btn primary" id="btnTrialBottom" type="button">Book Free Trial</button>
+        <button class="btn btnWhatsapp" id="btnWhatsappBottom" type="button" aria-label="Chat on WhatsApp">
+          <span class="btnIcon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M19.11 17.29c-.25-.12-1.47-.72-1.7-.8-.23-.08-.4-.12-.57.12-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.76-.15-.25-.02-.39.11-.52.11-.11.25-.3.37-.45.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.57-1.38-.78-1.9-.2-.48-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.45 1.02 2.62c.12.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.52.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.17.21-.57.21-1.06.15-1.17-.06-.11-.23-.17-.48-.3z"/>
+              <path fill="currentColor" d="M26.69 5.31C23.88 2.5 20.14.95 16.17.95 8.3.95 1.9 7.35 1.9 15.22c0 2.51.65 4.96 1.89 7.13L1.8 31.05l8.9-1.96c2.06 1.12 4.38 1.71 6.74 1.71h.01c7.87 0 14.27-6.4 14.27-14.27 0-3.97-1.55-7.71-4.36-10.22zM16.17 28.4h-.01c-2.12 0-4.2-.57-6.01-1.64l-.43-.26-5.28 1.16 1.13-5.15-.28-.53c-1.19-1.9-1.82-4.1-1.82-6.36 0-6.55 5.33-11.88 11.9-11.88 3.18 0 6.17 1.24 8.41 3.48 2.24 2.24 3.48 5.23 3.48 8.41 0 6.55-5.33 11.87-11.9 11.87z"/>
+            </svg>
+          </span>
+          <span>WhatsApp Now</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="sectionTitle">
+      <h2>Contact</h2>
+      <p>Message us on WhatsApp for fast response.</p>
+    </div>
+    <div class="twoCol">
+      <div class="card"><h3>WhatsApp</h3><p><a href="#" id="whatsappLinkText">Click to chat</a></p></div>
+      <div class="card"><h3>Email</h3><p><a href="mailto:ibnhosain014@gmail.com">ibnhosain014@gmail.com</a></p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="section" id="contact-form">
+    <div class="sectionTitle">
+      <h2>Contact Us</h2>
+      <p>Have a question? Send us a message and we will respond as soon as possible, InshaAllah.</p>
+    </div>
+    <div class="contactGrid">
+      <div class="card">
+        <h3>Get in Touch</h3>
+        <p>You can reach out for course details, fees, or to book a free trial class.</p>
+        <ul class="keyPoints contactList">
+          <li><span class="checkIcon">✔</span> Online classes for kids & adults</li>
+          <li><span class="checkIcon">✔</span> Flexible scheduling across global time zones</li>
+          <li><span class="checkIcon">✔</span> One-to-one personalized classes</li>
+          <li><span class="checkIcon">✔</span> Tajweed-focused Quran learning</li>
+          <li><span class="checkIcon">✔</span> Islamic manners & character building</li>
+          <li><span class="checkIcon">✔</span> Weekly progress updates for parents</li>
+          <li><span class="checkIcon">✔</span> Friendly, patient, and respectful teaching environment</li>
+        </ul>
+      </div>
+      <div class="card">
+        <form id="contactForm">
+          <div class="field"><label>Your Name</label><input name="name" required placeholder="Your full name" /></div>
+          <div class="field"><label>Email (optional)</label><input name="email" placeholder="example@email.com" /></div>
+          <div class="field"><label>Country</label><input name="country" required placeholder="Your country" /></div>
+          <div class="field"><label>Message</label><textarea name="message" rows="4" required placeholder="Write your message here..."></textarea></div>
+          <button class="btn btnWhatsapp full-width" type="submit">Send Message on WhatsApp</button>
+          <p class="note">Your message will be sent securely via WhatsApp.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap footerRow">
+    <div>© <span id="year"></span> At-Tarteel Quran Academy</div>
+    <div>Quran • Tajweed • Islamic Manners</div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="backdrop" id="backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal">
+    <div class="modalHead">
+      <h2>Your Journey to the Quran Begins Here</h2>
+      <button class="btn icon" id="btnCloseModal" type="button" aria-label="Close">✕</button>
+    </div>
+    <form id="trialForm" class="form">
+      <fieldset>
+        <legend>Admission Application Form</legend>
+        <div class="row">
+          <div class="field"><label>Student Name</label><input name="name" required placeholder="Child name" /></div>
+          <div class="field"><label>Age</label><input name="age" required placeholder="e.g. 5" /></div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>Country</label>
+            <select name="country" required>
+              <option value="">Select</option>
+              <option>USA</option><option>UK</option><option>Canada</option><option>Australia</option><option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Course Interested In</label>
+            <select name="course" required>
+              <option value="">Select</option>
+              <option>Absolute Beginners</option><option>Noorani Qaida</option><option>Quran Reading</option>
+              <option>Quran with Tajweed</option><option>Islamic Manners</option><option>Hifz Support</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label>Preferred Time (USA/UK Evening or Any Available)</label><input name="time" required placeholder="e.g. UK Evening / USA Evening" /></div>
+        <div class="field"><label>WhatsApp Number</label><input name="whatsapp" required placeholder="+1..., +44..., +880..." /></div>
+        <div class="field"><label>Upload Payment Screenshot</label><input type="file" id="screenshot" accept="image/*"></div>
+        <div class="ctaRow">
+          <button class="btn primary" type="submit">Submit Admission</button>
+          <button class="btn" id="btnCancel" type="button">Cancel</button>
+        </div>
+        <div class="paymentInfo">
+          <h4><strong>Payment Information:</strong></h4>
+          <p>📱 bKash: 01402499027</p>
+          <p><strong>🏦 Bank Account Details:</strong><br>
+            Bank Name: Islami Bank Bangladesh Limited<br>
+            Branch: Mymensingh (Code 140)<br>
+            Account Name: FARIDUR RAHMAN<br>
+            Account Number: 20501400203811511<br>
+            Swift Code: IBBLBDDH140<br>
+            Routing Number: 125611758
+          </p>
+          <p class="note">Submitting will open WhatsApp with your details pre-filled.</p>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
 
     <script src="./js/app.js"></script>
 </body>
