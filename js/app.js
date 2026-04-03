@@ -17,6 +17,7 @@ const btnCancel       = document.getElementById("btnCancel");
 const trialForm       = document.getElementById("trialForm");
 const btnTrialTop     = document.getElementById("btnTrialTop");
 const btnTrialHero    = document.getElementById("btnTrialHero");
+const btnTrialPill = document.getElementById("btnTrialPill");
 const btnTrialBottom  = document.getElementById("btnTrialBottom");
 const btnWhatsappTop    = document.getElementById("btnWhatsappTop");
 const btnWhatsappHero   = document.getElementById("btnWhatsappHero");
@@ -33,7 +34,9 @@ whatsappLinkText.addEventListener("click", (e) => {
   e.preventDefault();
   openWhatsApp(WHATSAPP_DEFAULT_TEXT);
 });
-
+btnTrialPill.addEventListener("click", () => {
+  openWhatsApp(WHATSAPP_DEFAULT_TEXT);
+});
 /* ========================= MODAL ========================= */
 function openModal() {
   backdrop.classList.add("show");
