@@ -213,7 +213,23 @@ button.hamburger { display: none; }
   max-width: 100%;
   flex-wrap: wrap;
 }
-
+.pillBtn {
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #f3f4f6;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  transition: background .15s, transform .15s, box-shadow .15s;
+}
+.pillBtn:hover {
+  background: #e6f7ee;
+  border-color: #25D366;
+  color: #0a6638;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37,211,102,0.2);
+}
+.pillArrow { font-size: 12px; margin-left: 2px; color: #25D366; }
 .pill .dot {
   width: 8px;
   height: 8px;
