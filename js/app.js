@@ -50,9 +50,11 @@ function closeModal() {
   document.body.style.overflow = "";
 }
 
-[btnTrialTop, btnTrialHero, btnTrialBottom].forEach((btn) => {
+[btnTrialTop, btnTrialHero].forEach((btn) => {
   btn.addEventListener("click", openModal);
 });
+
+btnTrialBottom.addEventListener("click", () => openWhatsApp(WHATSAPP_DEFAULT_TEXT));
 
 btnCloseModal.addEventListener("click", closeModal);
 btnCancel.addEventListener("click", closeModal);
